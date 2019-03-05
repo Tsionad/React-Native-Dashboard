@@ -1,3 +1,4 @@
+/* eslint-disable import/no-named-as-default */
 /**
  * @format
  * @lint-ignore-every XPLATJSCOPYRIGHT1
