@@ -10,13 +10,11 @@ import {
 type Props = {};
 
 export default class Note extends Component<Props> {
-
-        state = {
-            checked: false
-        }
+  state = {
+    checked: false,
+  }
 
   render() {
-
 
     return (
       <View key={this.props.keyval} style={styles.note}>
@@ -25,7 +23,6 @@ export default class Note extends Component<Props> {
                   checked={this.state.checked}
                   onIconPress={() => this.setState({checked: !false})}
                   />
-
         <TouchableOpacity
           onPress={this.props.deleteMethod}
           style={styles.noteDelete}
@@ -58,7 +55,6 @@ const styles = StyleSheet.create({
     top: 10,
     margin: 30,
     right: 10,
-
   },
   noteDeleteText: {
     color: "white",
