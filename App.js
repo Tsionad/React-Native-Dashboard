@@ -1,3 +1,5 @@
+/* eslint-disable react/jsx-filename-extension */
+/* eslint-disable react/prefer-stateless-function */
 /**
  * Sample React Native App
  * https://github.com/facebook/react-native
@@ -8,10 +10,11 @@
  */
 
 import React, { Component } from 'react';
-
 import Main from './app/components/Main';
 
-export default class App extends Component {
+type Props = {};
+
+export default class App extends Component<Props>{
   render() {
     return (
       <Main />

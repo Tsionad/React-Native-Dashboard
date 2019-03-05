@@ -1,3 +1,7 @@
+/* eslint-disable react/jsx-one-expression-per-line */
+/* eslint-disable react/jsx-filename-extension */
+/* eslint-disable no-unused-vars */
+/* eslint-disable react/prefer-stateless-function */
 /**
  * Sample React Native App
  * https://github.com/facebook/react-native
@@ -12,11 +16,12 @@ import {
   StyleSheet, Text, View, TextInput, ScrollView, TouchableOpacity,
 } from 'react-native';
 
-export default class Main extends Component {
+type Props = {};
+export default class Main extends Component<Props> {
   render() {
     return (
-      <View><Text>Nothing to display...</Text>
-
+      <View style={styles.container}>
+        <Text style={styles.welcome}>Welcome to My Dashboard!</Text>
       </View>
     );
   }
@@ -29,6 +34,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     backgroundColor: '#F5FCFF',
   },
+
   welcome: {
     fontSize: 20,
     textAlign: 'center',

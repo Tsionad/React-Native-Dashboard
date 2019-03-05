@@ -53,6 +53,5 @@ buck-out/
 */fastlane/screenshots
 
 # Bundle artifact
-*.jsbundle
 
 .vscode/
